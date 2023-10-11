@@ -7,6 +7,7 @@
     <field name="arch" type="xml">
         <xpath expr="/form/sheet/group/group/field[@name = 'vat']" position="after">
             <field name="delivery" attrs="{'invisible':[('type','!=','delivery')]}"/>
+            <field name="invoice" attrs="{'invisible':[('type','!=','invoice')]}"/>
         </xpath>
     </field>
   </record>

@@ -8,3 +8,4 @@ class ResPartner(models.Model):
     # T00459 adding dropship type in address type and delivery boolean field
     type = fields.Selection(selection_add=[("dropship", "Drop Ship Address")])
     delivery = fields.Boolean(string="set delivery address")
+    invoice = fields.Boolean(string="set Invoice address")
