@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     "name": "validate_vendor",
     "summary": """
@@ -8,7 +7,7 @@
         product with same date range and quantity
     """,
     "author": "Bizzappdev",
-    "website": "http://www.bizzappdev.com",
+    "website": "https://github.com/OCA/product-variant",
     "category": "Purchase",
     "version": "15.0.0.0.1",
     "depends": [
