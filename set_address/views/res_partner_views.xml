@@ -1,0 +1,14 @@
+<odoo>
+    <!-- inheriting partner form view to display boolean field -->
+  <record id="res_partner_view_form_extension" model="ir.ui.view">
+    <field name="name">res.partner.view.from.extension</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="/form/sheet/group/group/field[@name = 'vat']" position="after">
+            <field name="delivery" attrs="{'invisible':[('type','!=','delivery')]}"/>
+            <field name="invoice" attrs="{'invisible':[('type','!=','invoice')]}"/>
+        </xpath>
+    </field>
+  </record>
+</odoo>
